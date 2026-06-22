@@ -4,7 +4,7 @@
         "protomaps": {
             "type": "vector",
             "attribution": "<a href=\"https://github.com/protomaps/basemaps\">Protomaps</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
-            "url": "pmtiles://westport.pmtiles"
+            "url": "pmtiles://https://philion.github.io/tiles/westport.pmtiles"
         }
     },
     "layers": [
@@ -6197,6 +6197,6 @@
             }
         }
     ],
-    "sprite": "https://protomaps.github.io/basemaps-assets/sprites/v4/light",
-    "glyphs": "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf"
+    "sprite": "https://philion.github.io/tiles/basemaps-assets/sprites/v4/light",
+    "glyphs": "https://philion.github.io/tiles/basemaps-assets/fonts/{fontstack}/{range}.pbf"
 }
