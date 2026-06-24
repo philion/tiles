@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="maplibre-gl.css" />
         <script src="maplibre-gl.js"></script>
         <script src="pmtiles.js"></script>
+        <script src="maplibre-gl-layers-control.min.js"></script>
+
         <style>
             body {
                 margin: 0;
@@ -37,6 +39,7 @@
 
             // we first fetch the header so we can get the center lon, lat of the map.
             p.getHeader().then((h) => {
+                // build the map, with style
                 const map = new maplibregl.Map({
                     container: "map",
                     zoom: h.maxZoom - 2,
@@ -8604,6 +8607,12 @@
                         glyphs: "basemaps-assets/fonts/{fontstack}/{range}.pbf",
                     },
                 });
+
+                // load the controls
+                let layersControl = new LayersControl({
+                    title: '- Layers -',
+                });
+                map.addControl(layersControl, "bottom-left");
             });
         </script>
     </body>
